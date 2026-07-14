@@ -1,0 +1,423 @@
+/* ==========================
+   Google Font
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+}
+
+/* ==========================
+        NAVBAR
+========================== */
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,.4);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: .4s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* ==========================
+       HERO SECTION
+========================== */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 10% 60px;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+.hero-text h3 {
+  color: #94a3b8;
+  margin: 15px 0;
+}
+
+.hero-text p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #38bdf8;
+  box-shadow: 0 0 35px rgba(56,189,248,.5);
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #38bdf8;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #0284c7;
+}
+
+.hero button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* ==========================
+      SECTION
+========================== */
+
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  text-align: center;
+  color: #38bdf8;
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+/* ==========================
+       ABOUT
+========================== */
+
+#about p {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* ==========================
+       SKILLS
+========================== */
+
+.skill {
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill p {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.bar {
+  width: 100%;
+  height: 20px;
+  background: #334155;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  color: white;
+  border-radius: 20px;
+}
+
+.html {
+  width: 90%;
+  background: #e34c26;
+}
+
+.css {
+  width: 85%;
+  background: #2965f1;
+}
+
+.js {
+  width: 75%;
+  background: #f7df1e;
+  color: black;
+}
+
+.node {
+  width: 65%;
+  background: #3c873a;
+}
+/* ==========================
+        PROJECTS
+========================== */
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: .4s;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(56,189,248,.5);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 20px 0 10px;
+}
+
+.card p {
+  padding: 0 20px;
+  color: #cbd5e1;
+}
+
+.card a {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 25px;
+  background: #38bdf8;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: .3s;
+}
+
+.card a:hover {
+  background: #0284c7;
+}
+
+/* ==========================
+        EDUCATION
+========================== */
+
+#education {
+  text-align: center;
+}
+
+#education h3 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#education p {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+/* ==========================
+        CONTACT
+========================== */
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+form textarea {
+  height: 150px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+form button:hover {
+  background: #0284c7;
+}
+
+.social {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.social a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #1e293b;
+  color: white;
+  border-radius: 50%;
+  margin: 10px;
+  font-size: 22px;
+  transition: .4s;
+}
+
+.social a:hover {
+  background: #38bdf8;
+  transform: translateY(-8px);
+}
+
+/* ==========================
+        FOOTER
+========================== */
+
+footer {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+@media(max-width:768px) {
+
+  nav {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 170px;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-text h3 {
+    font-size: 22px;
+  }
+
+  .hero-image img {
+    width: 230px;
+    height: 230px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+  #typing {
+    color: #38bdf8;
+    font-weight: bold;
+  }
+
+  #typing::after {
+    content: "|";
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
